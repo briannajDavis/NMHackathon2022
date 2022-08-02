@@ -1,0 +1,7 @@
+.row {
+    border:black solid
+}
+.column{
+display: flex;
+justify-content: left;
+}
