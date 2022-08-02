@@ -1,57 +1,65 @@
-a{
-    padding: 1em;
+a {
+  padding: 1em;
 }
-.page{
-    margin: auto;
-    display: flex;
-    flex-direction: row;
-    padding-top: 2em;
-    width: 90%;
+h3 {
+  margin-left: 0.5em;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 3.5em;
+  color: #032a4a;
 }
-#title{
-    margin-top: 7em;
-    margin-bottom: 1em;
-    margin-left: .4em;
+.page {
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  padding-top: 2em;
+  width: 90%;
 }
-#personalInfo{
-    background-color: #eff1f3;
-    width: 25%;
-    height: 800px;
-    margin-left: 2em
+#title {
+  margin-top: 3em;
+  margin-bottom: .4em;
+  margin-left: 0.2em;
+}
+#personalInfo {
+  background-color: #eff1f3;
+  width: 25%;
+  height: 800px;
+  margin-left: 2em;
+  font-size: 1vw;
 }
 #controls {
-    display: flex;
-    flex-direction: row;
-    height: 5em;
-    width: 100%;
-    padding-left: 1em;
-    align-items: center;
-    justify-content: left;
-    border: solid #eff1f3;
-    background-color: #eff1f3;
+  display: flex;
+  flex-direction: row;
+  height: 5em;
+  width: 100%;
+  padding-left: 1em;
+  align-items: center;
+  justify-content: left;
+  border: solid #eff1f3;
+  background-color: #eff1f3;
 }
-#redoSurvey{
-    justify-self: right;
+#redoSurvey {
+  justify-self: right;
 }
-.content{
-    width: 75%;
+.content {
+  width: 75%;
 }
-.matches{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
+.matches {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
-.match{
-    border-bottom: #eff1f3 solid 2px;
-    display: flex;
-    flex: row;
-    align-items: center;
-    justify-content: baseline;
-    width: 100%;
-    margin-left: 1em;
+.match {
+  border-bottom: #eff1f3 solid 2px;
+  display: flex;
+  flex: row;
+  align-items: center;
+  justify-content: baseline;
+  width: 100%;
+  margin-left: 1em;
 }
-#home{
-    text-decoration: none;
-    color: black;
-    font-family: 'IBM Plex Sans', sans-serif;
+#home {
+  text-decoration: none;
+  color: black;
+  font-family: "IBM Plex Sans", sans-serif;
 }

@@ -3,15 +3,29 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import React from "react";
 function App() {
+  let fullName = "";
   const [visible, setVisible] = useState(0);
+  const [firstName, setFirst] = useState("");
+  const [lastName, setLast] = useState("");
+  const handleFirst = (e) => {
+    setFirst(e.target.value);
+  }
+  const handleLast = (e) => {
+    setLast(e.target.value);
+  }
+  const setName = () =>{
+    fullName = firstName + " " + lastName;
+    console.log(fullName);
+  }
   return (
     <div className="App">
       {visible === 0 && (
         <div id="welcome">
           <h1>Welcome to NM Lunch Meet</h1>
-          <h4>Have lunch with like minded individuals, across departments.
+          <h4>
+            Have lunch with like minded individuals, across departments.
             <br></br>Meet new people, explore NM.
-            </h4>
+          </h4>
           <div className="buttons">
             <button onClick={() => setVisible(-1)}>Sign In</button>
             <button onClick={() => setVisible(1)}>Sign Up</button>
@@ -21,28 +35,31 @@ function App() {
       {visible === -1 && (
         <div className="signOn">
           <h4>Sign in to view your matches</h4>
-          <input className="fName" type="text" placeholder="First Name"></input>
-          <input className="lName" type="text" placeholder="Last Name"></input>
+          <input className="fName" type="text" placeholder="First Name" onChange={handleFirst}></input>
+          <input className="lName" type="text" placeholder="Last Name" onChange={handleLast}></input>
           <div className="buttons">
-          <button onClick={() => setVisible(0)}>Back</button>
-          <button>
-            <Link className="links" to={{ pathname: "/myProfile" }}>
-              Enter
-            </Link>
-          </button>
+            <button onClick={() => setVisible(0)}>Back</button>
+            <button onClick={setName}>
+              <Link className="links" to={{ pathname: "/myProfile", state: { fullName }}} onClick={setName}>
+                Enter
+              </Link>
+            </button>
           </div>
         </div>
       )}
       {visible === 1 && (
         <div className="signOn">
-          <button onClick={() => setVisible(0)}>Back</button>
-          <input className="fName" type="text" placeholder="First Name"></input>
-          <input id="lName" type="text" placeholder="Last Name"></input>
-          <button>
-            <Link className="links" to={{ pathname: "/survey" }}>
-              Enter
-            </Link>
-          </button>
+          <h4>Sign up to begin</h4>
+          <input className="fName" type="text" placeholder="First Name" onChange={handleFirst}></input>
+          <input id="lName" type="text" placeholder="Last Name" onChange={handleLast}></input>
+          <div className="buttons">
+            <button onClick={() => setVisible(0)}>Back</button>
+            <button onClick={setName}>
+              <Link className="links" to={{ pathname: "/survey", state: { fullName } }} onClick={setName}>
+                Enter
+              </Link>
+            </button>
+          </div>
         </div>
       )}
     </div>
