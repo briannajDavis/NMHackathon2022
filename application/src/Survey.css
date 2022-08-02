@@ -1,7 +1,19 @@
-.row {
+.row1{
+    font-weight: 700;
+    justify-content: center;
+    width: 15%;
     border:black solid
 }
+
+.row {
+    justify-content: center;
+    width: 15%;
+    border:black solid
+}
+
 .column{
-display: flex;
-justify-content: left;
+    height: 7%;
+    border: black solid;
+    display: flex;
+    justify-content: center;
 }

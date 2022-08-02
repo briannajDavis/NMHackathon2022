@@ -11,7 +11,7 @@ function Survey() {
     <div className="page">
       <h1>Survey</h1>
       
-  <div class='row'>
+  <div class='row1'>
     <div class='column'>
         Category
     </div>
@@ -89,7 +89,7 @@ function Survey() {
         Maybe
     </div>
     <div class='column'>
-    <input type="radio" checked={false} />
+    <input type="radio"/>
     </div>
     <div class='column'>
       <input type="radio"></input>
