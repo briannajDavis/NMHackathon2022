@@ -8,7 +8,8 @@ function App() {
     <div className="App">
       {visible === 0 && (
         <div id="signIn">
-          <h2>Welcome</h2>
+          <h2>Welcome to A NAME WE HAVENT CHOSEN YET</h2>
+          <h4>Sign in or sign up below</h4>
           <div id="buttons">
             <button onClick={() => setVisible(-1)}>Sign In</button>
             <button onClick={() => setVisible(1)}>Sign Up</button>

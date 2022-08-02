@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "./Profile.css";
 
 function Profile() {
 //   const [visible, setVisible] = useState(0);
@@ -8,9 +9,11 @@ function Profile() {
         <h1>Me</h1>
       </div>
       <div>
-        <h1>Matches</h1>
+        <h1 id="title">Matches</h1>
         <div className="matches">
-            
+            <div className="match">Match One</div>
+            <div className="match">Match Two</div>
+            <div className="match">Match Three</div>
         </div>
       </div>
     </div>
