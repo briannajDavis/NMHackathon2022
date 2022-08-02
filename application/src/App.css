@@ -1,3 +1,13 @@
+h1{
+  font-family: 'IBM Plex Sans', sans-serif;
+font-family: 'Source Sans Pro', sans-serif;
+font-size: 3em;
+}
+h4{
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1.5em;
+
+}
 .App{
   display: flex;
   justify-content: center;
@@ -32,6 +42,6 @@
 }
 button{
   height: 3em;
-  width: 9em;
-  margin: 1em;
+  width: 10em;
+  margin: 2em;
 }
