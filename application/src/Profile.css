@@ -50,3 +50,8 @@ a{
     width: 100%;
     margin-left: 1em;
 }
+#home{
+    text-decoration: none;
+    color: black;
+    font-family: 'IBM Plex Sans', sans-serif;
+}

@@ -8,7 +8,7 @@ function Profile() {
     <div className="scope">
         <div id="controls">
         <Link id="home" to="/">
-          Name we dont have yet
+          Lunch Meet
         </Link>
         <button
           id="redoSurvey"
