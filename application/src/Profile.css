@@ -1,0 +1,14 @@
+.page{
+    display: flex;
+    flex-direction: row;
+    padding-top: 2em;
+}
+#title{
+    margin-top: 4em;
+}
+#personalInfo{
+    border: cadetblue groove;
+    width: 25%;
+    height: 800px;
+    margin-left: 2em
+}
