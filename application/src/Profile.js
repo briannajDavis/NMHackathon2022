@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./Profile.css";
+import React from 'react'
 
 function Profile() {
 //   const [visible, setVisible] = useState(0);
