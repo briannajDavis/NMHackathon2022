@@ -1,22 +1,44 @@
-import { useState } from "react";
+
 import "./Profile.css";
-import React from 'react'
+import {Link} from "react-router-dom";
 
 function Profile() {
-//   const [visible, setVisible] = useState(0);
+  //   const [visible, setVisible] = useState(0);
   return (
-    <div className="page">
-      <div id="personalInfo">
-        <h1>Me</h1>
+    <div className="scope">
+        <div id="controls">
+        <Link id="home" to="/">
+          Lunch Meet
+        </Link>
+        <button
+          id="redoSurvey"
+        >
+          Retake Survey
+        </button>
       </div>
-      <div>
+        <div className="page">
+
+      <div id="personalInfo">
+        <h1>First Last</h1>
+      </div>
+      <div className="content">
         <h1 id="title">Matches</h1>
         <div className="matches">
-            <div className="match">Match One</div>
-            <div className="match">Match Two</div>
-            <div className="match">Match Three</div>
+          <div className="match">
+            <h4>Last, First</h4>
+            <a href="google.com">email address</a>
+          </div>
+          <div className="match">
+            <h4>Last, First</h4>
+            <a href="google.com">email address</a>
+          </div>
+          <div className="match">
+            <h4>Last, First</h4>
+            <a href="google.com">email address</a>
+          </div>
         </div>
       </div>
+        </div>
     </div>
   );
 }
