@@ -5,17 +5,9 @@ import React from "react";
 function App() {
   let fullName = "";
   const [visible, setVisible] = useState(0);
-  const [firstName, setFirst] = useState("");
-  const [lastName, setLast] = useState("");
-  const handleFirst = (e) => {
-    setFirst(e.target.value);
-  }
-  const handleLast = (e) => {
-    setLast(e.target.value);
-  }
-  const setName = () =>{
-    fullName = firstName + " " + lastName;
-    console.log(fullName);
+  const [name, setName] = useState("");
+  const handleName = (e) => {
+    setName(e.target.value);
   }
   return (
     <div className="App">
@@ -35,12 +27,11 @@ function App() {
       {visible === -1 && (
         <div className="signOn">
           <h4>Sign in to view your matches</h4>
-          <input className="fName" type="text" placeholder="First Name" onChange={handleFirst}></input>
-          <input className="lName" type="text" placeholder="Last Name" onChange={handleLast}></input>
+          <input className="fName" type="text" placeholder="First and Last name" onChange={handleName}></input>
           <div className="buttons">
             <button onClick={() => setVisible(0)}>Back</button>
             <button onClick={setName}>
-              <Link className="links" to={{ pathname: "/myProfile", state: { fullName }}} onClick={setName}>
+              <Link className="links" to={{ pathname: "/myProfile", state: { name }}} onClick={setName}>
                 Enter
               </Link>
             </button>
@@ -50,8 +41,7 @@ function App() {
       {visible === 1 && (
         <div className="signOn">
           <h4>Sign up to begin</h4>
-          <input className="fName" type="text" placeholder="First Name" onChange={handleFirst}></input>
-          <input id="lName" type="text" placeholder="Last Name" onChange={handleLast}></input>
+          <input className="fName" type="text" placeholder="First and Last name" onChange={handleName}></input>
           <div className="buttons">
             <button onClick={() => setVisible(0)}>Back</button>
             <button onClick={setName}>

@@ -8,12 +8,22 @@ h3 {
   font-size: 3.5em;
   color: #032a4a;
 }
+button{
+  align-items: right;
+  justify-self: right;
+}
 .page {
   margin: auto;
   display: flex;
   flex-direction: row;
   padding-top: 2em;
   width: 90%;
+}
+.lunchB{
+  justify-self: right;
+  justify-content: right;
+  align-items: baseline;
+  margin-left: auto;
 }
 #title {
   margin-top: 3em;

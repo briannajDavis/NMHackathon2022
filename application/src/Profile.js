@@ -4,7 +4,9 @@ import { useLocation } from "react-router-dom";
 
 function Profile() {
   const location = useLocation();
-  console.log(location.state);
+  // console.log(location.state);
+  let fullName = location.state;
+  console.log(fullName);
   return (
     <div className="scope">
       <div id="controls">
@@ -27,16 +29,22 @@ function Profile() {
           <h1 id="title">Matches</h1>
           <div className="matches">
             <div className="match">
-              <h4>Last, First</h4>
-              <a href="google.com">email address</a>
+              <h4>Stoia, Nick</h4>
+              <div className="lunchB">
+                <button>Set up lunch</button>
+              </div>
             </div>
             <div className="match">
-              <h4>Last, First</h4>
-              <a href="google.com">email address</a>
+              <h4>Robbins, Donny</h4>
+              <div className="lunchB">
+                <button>Set up lunch</button>
+              </div>
             </div>
             <div className="match">
-              <h4>Last, First</h4>
-              <a href="google.com">email address</a>
+              <h4>Bergs, Teddy</h4>
+              <div className="lunchB">
+                <button>Set up lunch</button>
+              </div>
             </div>
           </div>
         </div>
