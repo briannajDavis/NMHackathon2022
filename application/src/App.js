@@ -10,11 +10,11 @@ function App() {
     setName(e.target.value);
   }
   return (
-    <div className="App">
+    <div className="App" >
       {visible === 0 && (
         <div id="welcome">
-          <h1>Welcome to NM Lunch Meet</h1>
-          <h4>
+          <h1 id="welcomeMessage">Welcome to NM Lunch Meet</h1>
+          <h4 className="purpose">
             Have lunch with like minded individuals, across departments.
             <br></br>Meet new people, explore NM.
           </h4>
