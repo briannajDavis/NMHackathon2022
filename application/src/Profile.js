@@ -4,7 +4,6 @@ import { useLocation } from "react-router-dom";
 
 function Profile() {
   const location = useLocation();
-  // console.log(location.state);
   let fullName = location.state;
   console.log(fullName);
   return (
